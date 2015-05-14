@@ -1,0 +1,2 @@
+20121106
+	Dans VODConvert: Remplacer ".converted.mov" par ".YYYYMMDDhhmm.mov" pour encoder l'horodatage de l'enregistrement.

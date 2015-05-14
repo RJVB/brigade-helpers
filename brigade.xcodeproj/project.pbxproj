@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D638EC8C11E8A66600980A84 /* brigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D638EC8B11E8A66600980A84 /* brigade.c */; };
+		D65125AD116F8AA500D11FB8 /* testBrigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D6512585116F880200D11FB8 /* testBrigade.c */; };
+		D68BF74811F6F53F002531C0 /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = D68BF74711F6F53F002531C0 /* timing.c */; };
+		D69B246B11E9DFAA001D242A /* libjpeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D69B246A11E9DFAA001D242A /* libjpeg.dylib */; };
+		D6FEB7C012411E5F0077911A /* brigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D638EC8B11E8A66600980A84 /* brigade.c */; };
+		D6FEB7C112411E5F0077911A /* testBrigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D6512585116F880200D11FB8 /* testBrigade.c */; };
+		D6FEB7C212411E5F0077911A /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = D68BF74711F6F53F002531C0 /* timing.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D638EC8B11E8A66600980A84 /* brigade.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = brigade.c; sourceTree = "<group>"; };
+		D651253C116F6B0200D11FB8 /* brigade.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = brigade.h; sourceTree = "<group>"; };
+		D6512585116F880200D11FB8 /* testBrigade.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = testBrigade.c; sourceTree = "<group>"; };
+		D65125AB116F8A8600D11FB8 /* testBrigade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testBrigade; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68BF74411F6F53F002531C0 /* winixdefs.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = winixdefs.h; sourceTree = "<group>"; };
+		D68BF74511F6F53F002531C0 /* _stdint_.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = _stdint_.h; sourceTree = "<group>"; };
+		D68BF74611F6F53F002531C0 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = timing.h; sourceTree = "<group>"; };
+		D68BF74711F6F53F002531C0 /* timing.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = timing.c; sourceTree = "<group>"; };
+		D69B246A11E9DFAA001D242A /* libjpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.dylib; path = /usr/local/lib/libjpeg.dylib; sourceTree = "<absolute>"; };
+		D6C5893711F9D3B100E6080A /* copyright.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = copyright.h; sourceTree = "<group>"; };
+		D6FEB7BE12411E3E0077911A /* RepairVOD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RepairVOD; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65125A9116F8A8600D11FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69B246B11E9DFAA001D242A /* libjpeg.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FEB7BC12411E3E0077911A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SlideShowImporterPB */ = {
+			isa = PBXGroup;
+			children = (
+				D69B246A11E9DFAA001D242A /* libjpeg.dylib */,
+				D6512536116F6ACF00D11FB8 /* Headers */,
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = SlideShowImporterPB;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D638EC8B11E8A66600980A84 /* brigade.c */,
+				D6512585116F880200D11FB8 /* testBrigade.c */,
+				D68BF74711F6F53F002531C0 /* timing.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65125AB116F8A8600D11FB8 /* testBrigade */,
+				D6FEB7BE12411E3E0077911A /* RepairVOD */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6512536116F6ACF00D11FB8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5893711F9D3B100E6080A /* copyright.h */,
+				D68BF74411F6F53F002531C0 /* winixdefs.h */,
+				D68BF74511F6F53F002531C0 /* _stdint_.h */,
+				D68BF74611F6F53F002531C0 /* timing.h */,
+				D651253C116F6B0200D11FB8 /* brigade.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65125AA116F8A8600D11FB8 /* testBrigade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65125B1116F8B0200D11FB8 /* Build configuration list for PBXNativeTarget "testBrigade" */;
+			buildPhases = (
+				D65125A8116F8A8600D11FB8 /* Sources */,
+				D65125A9116F8A8600D11FB8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testBrigade;
+			productName = testBrigade;
+			productReference = D65125AB116F8A8600D11FB8 /* testBrigade */;
+			productType = "com.apple.product-type.tool";
+		};
+		D6FEB7BD12411E3E0077911A /* RepairVOD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FEB7C512411EB90077911A /* Build configuration list for PBXNativeTarget "RepairVOD" */;
+			buildPhases = (
+				D6FEB7BB12411E3E0077911A /* Sources */,
+				D6FEB7BC12411E3E0077911A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepairVOD;
+			productName = RepairVOD;
+			productReference = D6FEB7BE12411E3E0077911A /* RepairVOD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D67D77700D50EE56009312BA /* Build configuration list for PBXProject "brigade" */;
+			hasScannedForEncodings = 0;
+			mainGroup = 089C166AFE841209C02AAC07 /* SlideShowImporterPB */;
+			projectDirPath = "";
+			targets = (
+				D65125AA116F8A8600D11FB8 /* testBrigade */,
+				D6FEB7BD12411E3E0077911A /* RepairVOD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65125A8116F8A8600D11FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65125AD116F8AA500D11FB8 /* testBrigade.c in Sources */,
+				D638EC8C11E8A66600980A84 /* brigade.c in Sources */,
+				D68BF74811F6F53F002531C0 /* timing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FEB7BB12411E3E0077911A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FEB7C012411E5F0077911A /* brigade.c in Sources */,
+				D6FEB7C112411E5F0077911A /* testBrigade.c in Sources */,
+				D6FEB7C212411E5F0077911A /* timing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D65125B2116F8B0200D11FB8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D65125B3116F8B0200D11FB8 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D65125B4116F8B0200D11FB8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		D67D77710D50EE56009312BA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = debug;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_CFLAGS = (
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Development;
+		};
+		D67D77720D50EE56009312BA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				OTHER_CFLAGS = (
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		D67D77730D50EE56009312BA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				OTHER_CFLAGS = (
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		D6FEB7C612411EB90077911A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					REPAIR_VOD,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D6FEB7C712411EB90077911A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = REPAIR_VOD;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D6FEB7C812411EB90077911A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65125B1116F8B0200D11FB8 /* Build configuration list for PBXNativeTarget "testBrigade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65125B2116F8B0200D11FB8 /* Development */,
+				D65125B3116F8B0200D11FB8 /* Deployment */,
+				D65125B4116F8B0200D11FB8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D67D77700D50EE56009312BA /* Build configuration list for PBXProject "brigade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67D77710D50EE56009312BA /* Development */,
+				D67D77720D50EE56009312BA /* Deployment */,
+				D67D77730D50EE56009312BA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D6FEB7C512411EB90077911A /* Build configuration list for PBXNativeTarget "RepairVOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FEB7C612411EB90077911A /* Development */,
+				D6FEB7C712411EB90077911A /* Deployment */,
+				D6FEB7C812411EB90077911A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

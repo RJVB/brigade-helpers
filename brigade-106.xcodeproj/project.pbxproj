@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D628B6D31635FAC400F1EFDC /* ffmpegDemux.c in Sources */ = {isa = PBXBuildFile; fileRef = D628B6D21635FAC400F1EFDC /* ffmpegDemux.c */; };
+		D628B6D41635FAC400F1EFDC /* ffmpegDemux.c in Sources */ = {isa = PBXBuildFile; fileRef = D628B6D21635FAC400F1EFDC /* ffmpegDemux.c */; };
+		D628B77C1636C7BB00F1EFDC /* brigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D638EC8B11E8A66600980A84 /* brigade.c */; };
+		D628B77D1636C7BB00F1EFDC /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = D68BF74711F6F53F002531C0 /* timing.c */; };
+		D628B7881636C7FC00F1EFDC /* VODconvert.c in Sources */ = {isa = PBXBuildFile; fileRef = D628B7871636C7FC00F1EFDC /* VODconvert.c */; };
+		D638EC8C11E8A66600980A84 /* brigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D638EC8B11E8A66600980A84 /* brigade.c */; };
+		D65125AD116F8AA500D11FB8 /* testBrigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D6512585116F880200D11FB8 /* testBrigade.c */; };
+		D68BF74811F6F53F002531C0 /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = D68BF74711F6F53F002531C0 /* timing.c */; };
+		D6EB64571639F17B00A80A5F /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64561639F17B00A80A5F /* libavformat.a */; };
+		D6EB645B1639F19C00A80A5F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB645A1639F19C00A80A5F /* libavutil.a */; };
+		D6EB647E1639F28200A80A5F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB647D1639F28200A80A5F /* libz.dylib */; };
+		D6EB64831639F29D00A80A5F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB646F1639F23200A80A5F /* libavcodec.a */; };
+		D6EB64B5163AC7B400A80A5F /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64B4163AC7B400A80A5F /* libbz2.dylib */; };
+		D6EB64B7163AC7BE00A80A5F /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64B6163AC7BE00A80A5F /* QuickTime.framework */; };
+		D6EB64BD163AC7D100A80A5F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64BC163AC7D100A80A5F /* CoreFoundation.framework */; };
+		D6EB64C3163AC7E900A80A5F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64C2163AC7E900A80A5F /* CoreVideo.framework */; };
+		D6EB64CB163AC82300A80A5F /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64CA163AC82300A80A5F /* VideoDecodeAcceleration.framework */; };
+		D6EB6544163ACCA500A80A5F /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64561639F17B00A80A5F /* libavformat.a */; };
+		D6EB6545163ACCA500A80A5F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB645A1639F19C00A80A5F /* libavutil.a */; };
+		D6EB6546163ACCA500A80A5F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB647D1639F28200A80A5F /* libz.dylib */; };
+		D6EB6547163ACCA500A80A5F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB646F1639F23200A80A5F /* libavcodec.a */; };
+		D6EB6548163ACCA500A80A5F /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64B4163AC7B400A80A5F /* libbz2.dylib */; };
+		D6EB6549163ACCA500A80A5F /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64B6163AC7BE00A80A5F /* QuickTime.framework */; };
+		D6EB654A163ACCA500A80A5F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64BC163AC7D100A80A5F /* CoreFoundation.framework */; };
+		D6EB654B163ACCA500A80A5F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64C2163AC7E900A80A5F /* CoreVideo.framework */; };
+		D6EB654C163ACCA500A80A5F /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EB64CA163AC82300A80A5F /* VideoDecodeAcceleration.framework */; };
+		D6EB6554163ACCD500A80A5F /* demuxing.c in Sources */ = {isa = PBXBuildFile; fileRef = D6EB6553163ACCD500A80A5F /* demuxing.c */; };
+		D6FEB7C012411E5F0077911A /* brigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D638EC8B11E8A66600980A84 /* brigade.c */; };
+		D6FEB7C112411E5F0077911A /* testBrigade.c in Sources */ = {isa = PBXBuildFile; fileRef = D6512585116F880200D11FB8 /* testBrigade.c */; };
+		D6FEB7C212411E5F0077911A /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = D68BF74711F6F53F002531C0 /* timing.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D628B6D21635FAC400F1EFDC /* ffmpegDemux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffmpegDemux.c; sourceTree = "<group>"; };
+		D628B7851636C7BB00F1EFDC /* VODconvert */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VODconvert; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628B7871636C7FC00F1EFDC /* VODconvert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VODconvert.c; sourceTree = "<group>"; };
+		D638EC8B11E8A66600980A84 /* brigade.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = brigade.c; sourceTree = "<group>"; };
+		D651253C116F6B0200D11FB8 /* brigade.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = brigade.h; sourceTree = "<group>"; };
+		D6512585116F880200D11FB8 /* testBrigade.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = testBrigade.c; sourceTree = "<group>"; };
+		D65125AB116F8A8600D11FB8 /* testBrigade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testBrigade; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6692E031649333000119830 /* TODOHist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODOHist.txt; sourceTree = "<group>"; };
+		D6870350166A73D100300B8D /* win32popen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32popen.h; sourceTree = "<group>"; };
+		D68BF74411F6F53F002531C0 /* winixdefs.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = winixdefs.h; sourceTree = "<group>"; };
+		D68BF74511F6F53F002531C0 /* _stdint_.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = _stdint_.h; sourceTree = "<group>"; };
+		D68BF74611F6F53F002531C0 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = timing.h; sourceTree = "<group>"; };
+		D68BF74711F6F53F002531C0 /* timing.c */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = timing.c; sourceTree = "<group>"; };
+		D69B246A11E9DFAA001D242A /* libjpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.dylib; path = /usr/local/lib/libjpeg.dylib; sourceTree = "<absolute>"; };
+		D6B222031664F93400AE190C /* win32popen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32popen.c; sourceTree = "<group>"; };
+		D6B222051665129700AE190C /* win32getpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32getpath.c; sourceTree = "<group>"; };
+		D6C5893711F9D3B100E6080A /* copyright.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = copyright.h; sourceTree = "<group>"; };
+		D6E19759164334940077678A /* muxing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = muxing.c; path = FFmpeg/muxing.c; sourceTree = "<group>"; };
+		D6EB64291639EAAD00A80A5F /* ffmpegDemux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffmpegDemux.h; sourceTree = "<group>"; };
+		D6EB64561639F17B00A80A5F /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = FFmpeg/macosx/lib/libavformat.a; sourceTree = "<group>"; };
+		D6EB645A1639F19C00A80A5F /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFmpeg/macosx/lib/libavutil.a; sourceTree = "<group>"; };
+		D6EB646F1639F23200A80A5F /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = FFmpeg/macosx/lib/libavcodec.a; sourceTree = "<group>"; };
+		D6EB647D1639F28200A80A5F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D6EB64B4163AC7B400A80A5F /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		D6EB64B6163AC7BE00A80A5F /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		D6EB64BC163AC7D100A80A5F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D6EB64C2163AC7E900A80A5F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D6EB64CA163AC82300A80A5F /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		D6EB6551163ACCA500A80A5F /* testBrigade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testBrigade; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EB6553163ACCD500A80A5F /* demuxing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = demuxing.c; path = FFmpeg/demuxing.c; sourceTree = "<group>"; };
+		D6EE2CDC1B04B7F40068219F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D6FEB7BE12411E3E0077911A /* RepairVOD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RepairVOD; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D628B77F1636C7BB00F1EFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65125A9116F8A8600D11FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EB64571639F17B00A80A5F /* libavformat.a in Frameworks */,
+				D6EB645B1639F19C00A80A5F /* libavutil.a in Frameworks */,
+				D6EB647E1639F28200A80A5F /* libz.dylib in Frameworks */,
+				D6EB64831639F29D00A80A5F /* libavcodec.a in Frameworks */,
+				D6EB64B5163AC7B400A80A5F /* libbz2.dylib in Frameworks */,
+				D6EB64B7163AC7BE00A80A5F /* QuickTime.framework in Frameworks */,
+				D6EB64BD163AC7D100A80A5F /* CoreFoundation.framework in Frameworks */,
+				D6EB64C3163AC7E900A80A5F /* CoreVideo.framework in Frameworks */,
+				D6EB64CB163AC82300A80A5F /* VideoDecodeAcceleration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EB6543163ACCA500A80A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EB6544163ACCA500A80A5F /* libavformat.a in Frameworks */,
+				D6EB6545163ACCA500A80A5F /* libavutil.a in Frameworks */,
+				D6EB6546163ACCA500A80A5F /* libz.dylib in Frameworks */,
+				D6EB6547163ACCA500A80A5F /* libavcodec.a in Frameworks */,
+				D6EB6548163ACCA500A80A5F /* libbz2.dylib in Frameworks */,
+				D6EB6549163ACCA500A80A5F /* QuickTime.framework in Frameworks */,
+				D6EB654A163ACCA500A80A5F /* CoreFoundation.framework in Frameworks */,
+				D6EB654B163ACCA500A80A5F /* CoreVideo.framework in Frameworks */,
+				D6EB654C163ACCA500A80A5F /* VideoDecodeAcceleration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FEB7BC12411E3E0077911A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SlideShowImporterPB */ = {
+			isa = PBXGroup;
+			children = (
+				D6EE2CDC1B04B7F40068219F /* .gitignore */,
+				D69B246A11E9DFAA001D242A /* libjpeg.dylib */,
+				D6512536116F6ACF00D11FB8 /* Headers */,
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+				D6692E031649333000119830 /* TODOHist.txt */,
+			);
+			name = SlideShowImporterPB;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D6EB64561639F17B00A80A5F /* libavformat.a */,
+				D6EB645A1639F19C00A80A5F /* libavutil.a */,
+				D6EB646F1639F23200A80A5F /* libavcodec.a */,
+				D6EB647D1639F28200A80A5F /* libz.dylib */,
+				D6EB64B4163AC7B400A80A5F /* libbz2.dylib */,
+				D6EB64B6163AC7BE00A80A5F /* QuickTime.framework */,
+				D6EB64BC163AC7D100A80A5F /* CoreFoundation.framework */,
+				D6EB64C2163AC7E900A80A5F /* CoreVideo.framework */,
+				D6EB64CA163AC82300A80A5F /* VideoDecodeAcceleration.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D6B222051665129700AE190C /* win32getpath.c */,
+				D6B222031664F93400AE190C /* win32popen.c */,
+				D6E19759164334940077678A /* muxing.c */,
+				D6EB6553163ACCD500A80A5F /* demuxing.c */,
+				D628B7871636C7FC00F1EFDC /* VODconvert.c */,
+				D628B6D21635FAC400F1EFDC /* ffmpegDemux.c */,
+				D638EC8B11E8A66600980A84 /* brigade.c */,
+				D6512585116F880200D11FB8 /* testBrigade.c */,
+				D68BF74711F6F53F002531C0 /* timing.c */,
+				D6870350166A73D100300B8D /* win32popen.h */,
+			);
+			name = "\U001b\U001bSource";
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65125AB116F8A8600D11FB8 /* testBrigade */,
+				D6FEB7BE12411E3E0077911A /* RepairVOD */,
+				D628B7851636C7BB00F1EFDC /* VODconvert */,
+				D6EB6551163ACCA500A80A5F /* testBrigade */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6512536116F6ACF00D11FB8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5893711F9D3B100E6080A /* copyright.h */,
+				D68BF74411F6F53F002531C0 /* winixdefs.h */,
+				D68BF74511F6F53F002531C0 /* _stdint_.h */,
+				D68BF74611F6F53F002531C0 /* timing.h */,
+				D651253C116F6B0200D11FB8 /* brigade.h */,
+				D6EB64291639EAAD00A80A5F /* ffmpegDemux.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D628B7791636C7BB00F1EFDC /* VODconvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D628B7811636C7BB00F1EFDC /* Build configuration list for PBXNativeTarget "VODconvert" */;
+			buildPhases = (
+				D628B77A1636C7BB00F1EFDC /* Sources */,
+				D628B77F1636C7BB00F1EFDC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VODconvert;
+			productName = testBrigade;
+			productReference = D628B7851636C7BB00F1EFDC /* VODconvert */;
+			productType = "com.apple.product-type.tool";
+		};
+		D65125AA116F8A8600D11FB8 /* testBrigade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65125B1116F8B0200D11FB8 /* Build configuration list for PBXNativeTarget "testBrigade" */;
+			buildPhases = (
+				D65125A8116F8A8600D11FB8 /* Sources */,
+				D65125A9116F8A8600D11FB8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testBrigade;
+			productName = testBrigade;
+			productReference = D65125AB116F8A8600D11FB8 /* testBrigade */;
+			productType = "com.apple.product-type.tool";
+		};
+		D6EB653D163ACCA500A80A5F /* FFmpeg-demuxer-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EB654D163ACCA500A80A5F /* Build configuration list for PBXNativeTarget "FFmpeg-demuxer-example" */;
+			buildPhases = (
+				D6EB653E163ACCA500A80A5F /* Sources */,
+				D6EB6543163ACCA500A80A5F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFmpeg-demuxer-example";
+			productName = testBrigade;
+			productReference = D6EB6551163ACCA500A80A5F /* testBrigade */;
+			productType = "com.apple.product-type.tool";
+		};
+		D6FEB7BD12411E3E0077911A /* RepairVOD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FEB7C512411EB90077911A /* Build configuration list for PBXNativeTarget "RepairVOD" */;
+			buildPhases = (
+				D6FEB7BB12411E3E0077911A /* Sources */,
+				D6FEB7BC12411E3E0077911A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepairVOD;
+			productName = RepairVOD;
+			productReference = D6FEB7BE12411E3E0077911A /* RepairVOD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = D67D77700D50EE56009312BA /* Build configuration list for PBXProject "brigade-106" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* SlideShowImporterPB */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65125AA116F8A8600D11FB8 /* testBrigade */,
+				D6FEB7BD12411E3E0077911A /* RepairVOD */,
+				D628B7791636C7BB00F1EFDC /* VODconvert */,
+				D6EB653D163ACCA500A80A5F /* FFmpeg-demuxer-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D628B77A1636C7BB00F1EFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D628B77C1636C7BB00F1EFDC /* brigade.c in Sources */,
+				D628B77D1636C7BB00F1EFDC /* timing.c in Sources */,
+				D628B7881636C7FC00F1EFDC /* VODconvert.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65125A8116F8A8600D11FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65125AD116F8AA500D11FB8 /* testBrigade.c in Sources */,
+				D638EC8C11E8A66600980A84 /* brigade.c in Sources */,
+				D68BF74811F6F53F002531C0 /* timing.c in Sources */,
+				D628B6D31635FAC400F1EFDC /* ffmpegDemux.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6EB653E163ACCA500A80A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EB6554163ACCD500A80A5F /* demuxing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FEB7BB12411E3E0077911A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FEB7C012411E5F0077911A /* brigade.c in Sources */,
+				D6FEB7C112411E5F0077911A /* testBrigade.c in Sources */,
+				D6FEB7C212411E5F0077911A /* timing.c in Sources */,
+				D628B6D41635FAC400F1EFDC /* ffmpegDemux.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D628B7821636C7BB00F1EFDC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					STANDALONE,
+					NO_FFMPEGLIBS_DEPEND,
+				);
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = VODconvert;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D628B7831636C7BB00F1EFDC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DEBUGGING_SYMBOLS = used;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					STANDALONE,
+					NO_FFMPEGLIBS_DEPEND,
+				);
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				LLVM_LTO = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = VODconvert;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D628B7841636C7BB00F1EFDC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_MODEL_TUNING = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = VODconvert;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		D65125B2116F8B0200D11FB8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					STANDALONE,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FFmpeg/macosx/lib",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D65125B3116F8B0200D11FB8 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PREPROCESSOR_DEFINITIONS = STANDALONE;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FFmpeg/macosx/lib",
+				);
+				LLVM_LTO = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D65125B4116F8B0200D11FB8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_MODEL_TUNING = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FFmpeg/macosx/lib\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		D67D77710D50EE56009312BA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BUILD_VARIANTS = debug;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = stabs;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				HEADER_SEARCH_PATHS = "FFmpeg/macosx/include/**";
+				LLVM_LTO = NO;
+				OTHER_CFLAGS = (
+					"-march=core2",
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Development;
+		};
+		D67D77720D50EE56009312BA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_STRICT_ALIASING = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				HEADER_SEARCH_PATHS = "FFmpeg/macosx/include/**";
+				LLVM_LTO = YES;
+				OTHER_CFLAGS = (
+					"-march=core2",
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Deployment;
+		};
+		D67D77730D50EE56009312BA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				HEADER_SEARCH_PATHS = "FFmpeg/macosx/include/**";
+				LLVM_LTO = YES;
+				OTHER_CFLAGS = (
+					"-march=core2",
+					"-ftracer",
+					"-ftree-vectorizer-verbose=1",
+				);
+				SDKROOT = macosx10.6;
+			};
+			name = Default;
+		};
+		D6EB654E163ACCA500A80A5F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					STANDALONE,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FFmpeg/macosx/lib\\",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = demuxing;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D6EB654F163ACCA500A80A5F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PREPROCESSOR_DEFINITIONS = STANDALONE;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FFmpeg/macosx/lib\\",
+				);
+				LLVM_LTO = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D6EB6550163ACCA500A80A5F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_MODEL_TUNING = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/FFmpeg/macosx/lib\\\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testBrigade;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		D6FEB7C612411EB90077911A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					REPAIR_VOD,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D6FEB7C712411EB90077911A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PREPROCESSOR_DEFINITIONS = REPAIR_VOD;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D6FEB7C812411EB90077911A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = RepairVOD;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D628B7811636C7BB00F1EFDC /* Build configuration list for PBXNativeTarget "VODconvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D628B7821636C7BB00F1EFDC /* Development */,
+				D628B7831636C7BB00F1EFDC /* Deployment */,
+				D628B7841636C7BB00F1EFDC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D65125B1116F8B0200D11FB8 /* Build configuration list for PBXNativeTarget "testBrigade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65125B2116F8B0200D11FB8 /* Development */,
+				D65125B3116F8B0200D11FB8 /* Deployment */,
+				D65125B4116F8B0200D11FB8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D67D77700D50EE56009312BA /* Build configuration list for PBXProject "brigade-106" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67D77710D50EE56009312BA /* Development */,
+				D67D77720D50EE56009312BA /* Deployment */,
+				D67D77730D50EE56009312BA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D6EB654D163ACCA500A80A5F /* Build configuration list for PBXNativeTarget "FFmpeg-demuxer-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EB654E163ACCA500A80A5F /* Development */,
+				D6EB654F163ACCA500A80A5F /* Deployment */,
+				D6EB6550163ACCA500A80A5F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D6FEB7C512411EB90077911A /* Build configuration list for PBXNativeTarget "RepairVOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FEB7C612411EB90077911A /* Development */,
+				D6FEB7C712411EB90077911A /* Deployment */,
+				D6FEB7C812411EB90077911A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
